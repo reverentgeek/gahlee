@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>{{ title }}
+						{% if title %}
+								|
+						{% endif %}Gah-Lee! House</title>
+				<link rel="stylesheet" href="/css/styles.css">
+				{%- block head %}{% endblock %}
+		</head>
+		<body>
+				<div class="site-wrapper">
+						<header class="site-header">
+								<div class="header-content">
+										<a href="/" class="site-title">
+												<img src="/images/titlebar.jpg" alt="Gah-Lee! House" class="titlebar">
+										</a>
+										<nav class="main-nav" aria-label="Main navigation">
+												<ul>
+														<li>
+																<a href="/" {% if page.url == "/" %} aria-current="page" {% endif %}>Home</a>
+														</li>
+														<li>
+																<a href="/photos/" {% if page.url == "/photos/" %} aria-current="page" {% endif %}>Photos</a>
+														</li>
+												</ul>
+										</nav>
+								</div>
+						</header>
+
+						<main class="site-main">
+								<div class="content{% if contentClass %} {{ contentClass }}{% endif %}">
+										{%- block content %}
+												{{ content | safe }}
+										{%- endblock %}
+								</div>
+						</main>
+
+						<footer class="site-footer">
+								<p>&copy; 2000–{{ page.date.getFullYear() }}
+										gahlee.com. All rights reserved.</p>
+						</footer>
+				</div>
+		</body>
+</html>

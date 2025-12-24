@@ -1,0 +1,112 @@
+---
+layout: base.njk
+contentClass: wide
+pagination:
+  data: albums
+  size: 1
+  alias: album
+permalink: "photos/{{ album.slug }}/"
+eleventyComputed:
+  title: "{{ album.name }}"
+---
+
+<nav class="breadcrumb">
+	<a href="/photos/">← Back to Albums</a>
+</nav>
+
+<header class="album-header">
+	<h2>{{ album.name }}</h2>
+	{%- if album.dateFormatted or album.description %}
+	<div class="album-details">
+		{%- if album.dateFormatted %}<p class="album-date">{{ album.dateFormatted }}</p>{% endif %}
+		{%- if album.description %}<p class="album-description">{{ album.description }}</p>{% endif %}
+	</div>
+	{%- endif %}
+	<p class="album-count">{{ album.photoCount }} photo{{ "s" if album.photoCount != 1 }}</p>
+</header>
+
+<div class="gallery">
+	{%- for photo in album.photos %}
+	<a href="{{ photo.src }}" class="gallery-item" data-title="{{ photo.title }}" data-description="{{ photo.description }}">
+		<img src="{{ photo.src }}" alt="{{ photo.title or photo.description or ('Photo from ' + album.name) }}" loading="lazy">
+	</a>
+	{%- endfor %}
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+	<button class="lightbox-close" aria-label="Close">&times;</button>
+	<button class="lightbox-prev" aria-label="Previous">&lsaquo;</button>
+	<button class="lightbox-next" aria-label="Next">&rsaquo;</button>
+	<div class="lightbox-content">
+		<img src="" alt="" id="lightbox-img">
+		<div class="lightbox-info">
+			<p class="lightbox-title" id="lightbox-title"></p>
+			<p class="lightbox-caption" id="lightbox-caption"></p>
+		</div>
+	</div>
+</div>
+
+<script>
+(function() {
+	const gallery = document.querySelector(".gallery");
+	const lightbox = document.getElementById("lightbox");
+	const lightboxImg = document.getElementById("lightbox-img");
+	const lightboxTitle = document.getElementById("lightbox-title");
+	const lightboxCaption = document.getElementById("lightbox-caption");
+	const items = Array.from(document.querySelectorAll(".gallery-item"));
+	let currentIndex = 0;
+
+	function openLightbox(index) {
+		currentIndex = index;
+		const item = items[index];
+		const img = item.querySelector("img");
+		const title = item.dataset.title || "";
+		const description = item.dataset.description || "";
+
+		lightboxImg.src = item.href;
+		lightboxImg.alt = img.alt;
+		lightboxTitle.textContent = title;
+		lightboxCaption.textContent = description;
+		lightbox.hidden = false;
+		document.body.style.overflow = "hidden";
+	}
+
+	function closeLightbox() {
+		lightbox.hidden = true;
+		document.body.style.overflow = "";
+	}
+
+	function showPrev() {
+		currentIndex = (currentIndex - 1 + items.length) % items.length;
+		openLightbox(currentIndex);
+	}
+
+	function showNext() {
+		currentIndex = (currentIndex + 1) % items.length;
+		openLightbox(currentIndex);
+	}
+
+	gallery.addEventListener("click", (e) => {
+		const item = e.target.closest(".gallery-item");
+		if (item) {
+			e.preventDefault();
+			openLightbox(items.indexOf(item));
+		}
+	});
+
+	lightbox.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
+	lightbox.querySelector(".lightbox-prev").addEventListener("click", showPrev);
+	lightbox.querySelector(".lightbox-next").addEventListener("click", showNext);
+
+	lightbox.addEventListener("click", (e) => {
+		if (e.target === lightbox) closeLightbox();
+	});
+
+	document.addEventListener("keydown", (e) => {
+		if (lightbox.hidden) return;
+		if (e.key === "Escape") closeLightbox();
+		if (e.key === "ArrowLeft") showPrev();
+		if (e.key === "ArrowRight") showNext();
+	});
+})();
+</script>

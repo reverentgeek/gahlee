@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Photos
+contentClass: wide
+---
+
+<h2>Photo Albums</h2>
+<p>{{ albums.length }} albums with family photos.</p>
+
+<div class="album-grid">
+	{%- for album in albums %}
+	<a href="/photos/{{ album.slug }}/" class="album-card">
+		{%- if album.coverPhoto %}
+		<div class="album-cover">
+			<img src="{{ album.coverPhoto.src }}" alt="{{ album.name }}" loading="lazy">
+		</div>
+		{%- endif %}
+		<div class="album-info">
+			<h3>{{ album.name }}</h3>
+			<p class="album-meta">
+				{%- if album.dateFormatted %}{{ album.dateFormatted }} · {% endif %}{{ album.photoCount }} photo{{ "s" if album.photoCount != 1 }}
+			</p>
+			{%- if album.description %}
+			<p class="album-description">{{ album.description }}</p>
+			{%- endif %}
+		</div>
+	</a>
+	{%- endfor %}
+</div>
