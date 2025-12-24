@@ -5,7 +5,7 @@ export default function () {
 	const dataDir = path.join( process.cwd(), "src", "_data" );
 
 	// Read the JSON files (strip BOM if present)
-	const stripBom = ( str ) => str.replace( /^\uFEFF/, "" );
+	const stripBom = str => str.replace( /^\uFEFF/, "" );
 	const albumsRaw = JSON.parse( stripBom( fs.readFileSync( path.join( dataDir, "tblPhotoAlbum.json" ), "utf-8" ) ) );
 	const photosRaw = JSON.parse( stripBom( fs.readFileSync( path.join( dataDir, "tblPhoto.json" ), "utf-8" ) ) );
 
@@ -53,7 +53,7 @@ export default function () {
 	// Build albums array
 	const albumsProcessed = albumsRaw
 		.filter( album => album.PhotoAlbumIsEnabled )
-		.map( album => {
+		.map( ( album ) => {
 			const photos = photosByAlbum[album.PhotoAlbumID] || [];
 
 			// Format the album date
@@ -105,7 +105,7 @@ export default function () {
 
 	// Ensure unique slugs by appending index for duplicates
 	const slugCounts = {};
-	const albums = albumsProcessed.map( album => {
+	const albums = albumsProcessed.map( ( album ) => {
 		let slug = album.baseSlug;
 		if ( slugCounts[slug] !== undefined ) {
 			slugCounts[slug]++;
