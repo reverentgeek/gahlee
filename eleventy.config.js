@@ -2,6 +2,7 @@ export default function ( eleventyConfig ) {
 	// Pass through static assets
 	eleventyConfig.addPassthroughCopy( "src/css" );
 	eleventyConfig.addPassthroughCopy( "src/images" );
+	eleventyConfig.addPassthroughCopy( { "images": "images" } );
 
 	// Watch CSS for changes
 	eleventyConfig.addWatchTarget( "src/css/" );
