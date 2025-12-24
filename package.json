@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve",
+    "start": "npm run clean && eleventy --serve",
     "clean": "rm -rf _site",
     "lint": "eslint src/**/*.js"
   },
