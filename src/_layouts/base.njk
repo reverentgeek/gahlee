@@ -7,6 +7,9 @@
 						{% if title %}
 								|
 						{% endif %}Gah-Lee! House</title>
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=PT+Serif&display=swap" rel="stylesheet">
 				<link rel="stylesheet" href="/css/styles.css">
 				{%- block head %}{% endblock %}
 		</head>
@@ -24,6 +27,9 @@
 														</li>
 														<li>
 																<a href="/photos/" {% if page.url == "/photos/" %} aria-current="page" {% endif %}>Photos</a>
+														</li>
+														<li>
+																<a href="/recipes/" {% if page.url == "/recipes/" %} aria-current="page" {% endif %}>Recipes</a>
 														</li>
 												</ul>
 										</nav>

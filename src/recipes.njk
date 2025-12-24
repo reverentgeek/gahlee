@@ -1,0 +1,112 @@
+---
+layout: base.njk
+title: Recipes
+---
+
+<h2>Recipes</h2>
+
+<div class="recipe-controls">
+	<input
+		type="text"
+		id="recipe-search"
+		class="recipe-search"
+		placeholder="Search recipes..."
+		aria-label="Search recipes"
+	>
+
+	<div class="recipe-categories" role="group" aria-label="Filter by category">
+		<button class="recipe-category-btn active" data-category="All">All</button>
+		<button class="recipe-category-btn" data-category="Main Dishes">Main Dishes</button>
+		<button class="recipe-category-btn" data-category="Desserts">Desserts</button>
+		<button class="recipe-category-btn" data-category="Breads">Breads</button>
+		<button class="recipe-category-btn" data-category="Sides">Sides</button>
+		<button class="recipe-category-btn" data-category="Appetizers">Appetizers</button>
+		<button class="recipe-category-btn" data-category="Sauces">Sauces</button>
+	</div>
+
+	<p class="recipe-count"><span id="recipe-count">{{ recipes.length }}</span> recipes found</p>
+</div>
+
+<div class="recipe-grid">
+	{%- for recipe in recipes %}
+	<article
+		class="recipe-card"
+		data-title="{{ recipe.title | lower }}"
+		data-category="{{ recipe.category }}"
+		data-ingredients="{{ recipe.ingredients | join(' ') | lower }}"
+	>
+		<a href="/recipes/{{ recipe.title | snake_case }}/" class="recipe-print-link" title="Print this recipe">
+			<img src="/images/print.svg" alt="Print">
+		</a>
+
+		<div class="recipe-card-header">
+			<img src="/images/recipe.png" alt="" class="recipe-card-image">
+			<div>
+				<h3 class="recipe-card-title">{{ recipe.title }}</h3>
+				<ul class="recipe-ingredients">
+					{%- for ingredient in recipe.ingredients %}
+					<li>{{ ingredient }}</li>
+					{%- endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<div class="recipe-directions">
+			{%- for step in recipe.directions %}
+			<p>{{ step }}</p>
+			{%- endfor %}
+		</div>
+	</article>
+	{%- endfor %}
+</div>
+
+<script>
+(function() {
+	const searchInput = document.getElementById('recipe-search');
+	const categoryButtons = document.querySelectorAll('.recipe-category-btn');
+	const recipeCards = document.querySelectorAll('.recipe-card');
+	const recipeCount = document.getElementById('recipe-count');
+
+	let currentCategory = 'All';
+	let currentSearch = '';
+
+	function filterRecipes() {
+		const searchTerm = currentSearch.toLowerCase();
+		let visibleCount = 0;
+
+		recipeCards.forEach(card => {
+			const title = card.dataset.title;
+			const category = card.dataset.category;
+			const ingredients = card.dataset.ingredients;
+
+			const matchesCategory = currentCategory === 'All' || category === currentCategory;
+			const matchesSearch = searchTerm === '' ||
+				title.includes(searchTerm) ||
+				ingredients.includes(searchTerm);
+
+			if (matchesCategory && matchesSearch) {
+				card.style.display = '';
+				visibleCount++;
+			} else {
+				card.style.display = 'none';
+			}
+		});
+
+		recipeCount.textContent = visibleCount;
+	}
+
+	searchInput.addEventListener('input', (e) => {
+		currentSearch = e.target.value;
+		filterRecipes();
+	});
+
+	categoryButtons.forEach(btn => {
+		btn.addEventListener('click', () => {
+			categoryButtons.forEach(b => b.classList.remove('active'));
+			btn.classList.add('active');
+			currentCategory = btn.dataset.category;
+			filterRecipes();
+		});
+	});
+})();
+</script>

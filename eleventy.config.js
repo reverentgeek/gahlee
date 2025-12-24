@@ -1,10 +1,18 @@
 export default function ( eleventyConfig ) {
 	// Pass through static assets
 	eleventyConfig.addPassthroughCopy( "src/css" );
-	eleventyConfig.addPassthroughCopy( "images" );
+	eleventyConfig.addPassthroughCopy( "src/images" );
 
 	// Watch CSS for changes
 	eleventyConfig.addWatchTarget( "src/css/" );
+
+	// Snake case filter for URLs
+	eleventyConfig.addFilter( "snake_case", ( str ) => {
+		return str
+			.toLowerCase()
+			.replace( /[^a-z0-9]+/g, "_" )
+			.replace( /^_+|_+$/g, "" );
+	} );
 
 	return {
 		dir: {

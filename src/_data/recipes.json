@@ -1,0 +1,943 @@
+[
+	{
+		"title": "Almond Pastry",
+		"category": "Desserts",
+		"ingredients": [
+			"½ cup butter softened",
+			"1 cup flour",
+			"2 T water",
+			"½ cup butter",
+			"1 cup water",
+			"1 tsp almond extract",
+			"1 cup flour",
+			"3 eggs",
+			"Powdered sugar glaze",
+			"Sliced almonds"
+		],
+		"directions": [
+			"Cut ½ cup of butter into 1 cup of flour. Sprinkle 2 T water over the mix. Mix and form into a ball. Divide it in half. On ungreased baking sheet, pat each half into a strip about 12x3. Heat ½ cup butter and 1 cup water to a boil. Remove from heat and quickly stir in almond extract and 1 cup of flour. Stir vigorously over low heat until mixture forms a ball, about 1 minute. Remove from heat. Beat in eggs all at once until smooth and glossy. Divide in half and spread each half evenly over strips. Bake at 350 for 60 minutes or until golden brown. Top with powdered sugar glaze and nuts. Powdered sugar glaze is made by putting some powdered sugar in a bowl and adding a little water."
+		],
+		"id": 1
+	},
+	{
+		"title": "Banana Bread",
+		"category": "Breads",
+		"ingredients": [
+			"1 stick of butter",
+			"1 cup of sugar",
+			"1 egg",
+			"3 mashed bananas",
+			"2 cups flour",
+			"1 tsp baking soda"
+		],
+		"directions": [
+			"Melt butter. Add sugar, egg, and mashed bananas. Mix flour and soda together then add to banana mixture. Pour into greased and floured loaf pan. Bake at 325 for 1 hour."
+		],
+		"id": 2
+	},
+	{
+		"title": "Basic Muffins",
+		"category": "Breads",
+		"ingredients": [
+			"1 ¾ cup self-rising flour",
+			"¼ cup sugar",
+			"1 egg",
+			"¾ cup milk",
+			"⅓ cup oil"
+		],
+		"directions": [
+			"Mix flour and sugar. In a separate bowl, mix egg, milk, and oil. Combine mixtures. Do not over beat. Bake at 400 for 20 minutes."
+		],
+		"id": 3
+	},
+	{
+		"title": "Broccoli Salad",
+		"category": "Sides",
+		"ingredients": [
+			"1 head broccoli",
+			"6-8 slices cooked bacon",
+			"½ cup chopped red onion",
+			"1 cup grapes, halved",
+			"1 cup sunflower seeds",
+			"8 oz sharp cheddar shredded",
+			"Dressing:",
+			"1 cup mayonnaise",
+			"2 T vinegar",
+			"¼ cup sugar"
+		],
+		"directions": [
+			"Cut broccoli into bite size pieces. Mix ingredients together. Mix dressing",
+			"together in a small bowl. Add the dressing, stir to coat and refrigerate before serving."
+		],
+		"id": 4
+	},
+	{
+		"title": "Buckeyes",
+		"category": "Desserts",
+		"ingredients": [
+			"3 Cups Rice Krispies",
+			"2 Cups crunchy ",
+			"peanut butter",
+			"1 lb powdered sugar",
+			"1/2 Cup butter",
+			"12 oz chocolate chips",
+			"½ bar paraffin"
+		],
+		"directions": [
+			"Mix Rice Krispies, peanut butter, powdered sugar, and butter. Press into balls about the size of a small walnut. Do not bake. ",
+			"Melt chocolate and paraffin in double boiler. Mix well and dip balls using a toothpick or fork, leaving a small area on the top bare. Let cool on wax paper."
+		],
+		"id": 5
+	},
+	{
+		"title": "Crockpot Calico Beans",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 lb ground beef",
+			"8 oz bacon",
+			"1 cup chopped onion",
+			"½ cup brown sugar ",
+			"½ cup ketchup",
+			"1 T vinegar",
+			"4 cans of various beans"
+		],
+		"directions": [
+			"You can use any kinds of beans like pork and beans, kidney beans, butter beans, lima beans, great northern beans, or garbanzo beans. ",
+			"Brown and drain beef. Cook and crumble bacon. Drain beans and mix all together in a crockpot. Cook on low for 4 to 6 hours."
+		],
+		"id": 6
+	},
+	{
+		"title": "Carrot Cake",
+		"category": "Desserts",
+		"ingredients": [
+			"2 cups flour",
+			"2 cups sugar",
+			"2 tsp baking soda",
+			"3 tsp cinnamon",
+			"1 tsp salt",
+			"4 eggs",
+			"1 ½ cup oil",
+			"2 tsp vanilla ",
+			"3 cups raw carrots grated"
+		],
+		"directions": [
+			"Mix dry ingredients together. Add eggs, oil and vanilla. Mix well. Add grated carrots. Bake in 3 round layer pans at 325 for 30 minutes. Let cool in pans for 10 minutes then remove and place on cooling racks. When completely cool, frost with cream cheese frosting."
+		],
+		"id": 7
+	},
+	{
+		"title": "Cheese Ball",
+		"category": "Appetizers",
+		"ingredients": [
+			"8 oz cream cheese",
+			"1 T onion",
+			"1 T butter",
+			"1 T lemon juice",
+			"8 oz sharp cheddar cheese",
+			"2 T Worcester sauce",
+			"Crushed pecans"
+		],
+		"directions": [
+			"Allow cream cheese and butter to come to room temperature. Finely chop onion. Mix all ingredients except nuts together. I usually use my hands to mush it altogether. Roll into a ball, cover, and refrigerate for at least a few hours till firm. Roll in crushed pecans."
+		],
+		"id": 8
+	},
+	{
+		"title": "Chicken-n-Broccoli",
+		"category": "Main Dishes",
+		"ingredients": [
+			"Broccoli",
+			"Chicken",
+			"Bread or cracker crumbs",
+			"1 can cream of chicken soup",
+			"½ cup mayonnaise",
+			"1 tsp salt",
+			"½ cup evaporated milk",
+			"½ tsp curry powder"
+		],
+		"directions": [
+			"Cook enough broccoli and chicken to cover the bottom of a 9x13 pan. This works well with leftover chicken. Mix together soup, mayo, salt, milk, and curry powder. Spared it on top of the chicken and broccoli. Top with bread crumbs or Ritz cracker crumbs. Bake at 350 for 30 minutes."
+		],
+		"id": 9
+	},
+	{
+		"title": "Chinese Egg Rolls",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 lb of meat",
+			"2 cans bean sprouts",
+			"½ medium onion",
+			"1 small head of cabbage",
+			"2 cans bamboo shoots",
+			"½ tsp soy sauce",
+			"1 tsp Chinese spices",
+			"1 tsp salt",
+			"1 tsp garlic",
+			"4 oz peanut butter",
+			"2 packages of eggroll wrappers",
+			"Oil for frying"
+		],
+		"directions": [
+			"Cook hamburger, drained bean sprouts and onion together. Drain off fat. Shred cabbage and bamboo shoots together. In large bowl, mix meat mixture and cabbage with the spices. Add peanut butter and mix well. Put spoonfuls onto egg roll wrappers and roll up. Use a flour/water paste to seal. Deep fry at 325 until golden brown."
+		],
+		"id": 10
+	},
+	{
+		"title": "Chocolate Chip Cookies",
+		"category": "Desserts",
+		"ingredients": [
+			"2 ¼ cups flour",
+			"1 tsp salt",
+			"1 tsp baking soda",
+			"¾ cup sugar",
+			"¾ cup brown sugar",
+			"1 cup softened butter ",
+			"1 tsp vanilla",
+			"2 eggs",
+			"2 cups chocolate chips"
+		],
+		"directions": [
+			"Mix flour, soda, and salt. In a separate bowl, combine butter, sugars, and vanilla. Beat until creamy. Beat in eggs, then gradually add the flour mixture and mix well. Stir in chocolate chips. Drop by spoonfuls onto ungreased cookie sheet. Bake at 375 for 8-10 minutes."
+		],
+		"id": 11
+	},
+	{
+		"title": "Chocolate Crunch Cups",
+		"category": "Desserts",
+		"ingredients": [
+			"10 oz peanut butter chips",
+			"6 oz chocolate chips",
+			"1 ½ cups dry roasted",
+			"salted peanuts",
+			"1 cup ripple potato chips"
+		],
+		"directions": [
+			"In a medium microwave safe bowl, combine the peanut butter and chocolate chips. Microwave at 50% power for 2-4 minutes or until smooth. Stir after each minute to check. Stir in peanuts and potato chips. Drop by spoonfuls onto wax paper on into mini cupcake wrappers."
+		],
+		"id": 12
+	},
+	{
+		"title": "Chocolate Eclair",
+		"category": "Desserts",
+		"ingredients": [
+			"2 small packages",
+			"vanilla pudding",
+			"3 ½ Cups milk",
+			"8 oz cool whip",
+			"1 box of graham crackers",
+			"1 can of chocolate frosting"
+		],
+		"directions": [
+			"Mix pudding and milk for 2 minutes. Fold in cool whip. In a 9x13 pan, layer whole graham crackers with the pudding mixture. Three layers of crackers and two layers of pudding. Refrigerate for 2 hours. Frost with chocolate frosting. Cover and refrigerate for 24 hours. Cut into squares and serve."
+		],
+		"id": 13
+	},
+	{
+		"title": "Corn Bread",
+		"category": "Breads",
+		"ingredients": [
+			"1 cup flour",
+			"1 cup corn meal",
+			"4 tsp baking powder",
+			"¼ cup sugar",
+			"¾ tsp salt",
+			"1 cup milk",
+			"2 eggs",
+			"¼ cup oil"
+		],
+		"directions": [
+			"Mix dry ingredients together. Add eggs, then milk and oil. Mix until batter is smooth. Do not overbeat. Put in greased 9x9 pan or a cast iron skillet. Bake at 425 for 20-25 minutes."
+		],
+		"id": 14
+	},
+	{
+		"title": "Corn Casserole",
+		"category": "Sides",
+		"ingredients": [
+			"1 chopped onion",
+			"1 minced garlic clove",
+			"1 box Jiffy corn muffin mix",
+			"1 T milk",
+			"1 egg",
+			"1 can creamed corn",
+			"8 oz sour cream",
+			"1 lb grated sharp cheddar"
+		],
+		"directions": [
+			"Sauté onion and garlic in a little oil or butter. In a bowl, mix muffin mix, milk, egg, creamed corn, onion, and garlic. Spread into an 8x8 pan. Cover with sour cream then cheese. Bake at 425 for 25-30 minutes."
+		],
+		"id": 15
+	},
+	{
+		"title": "Cream Cheese Frosting",
+		"category": "Sauces",
+		"ingredients": [
+			"2 8oz packages",
+			"cream cheese",
+			"½ cup butter",
+			"1 tsp vanilla",
+			"2 cups powdered sugar"
+		],
+		"directions": [
+			"Soften cream cheese and butter. Cream together with vanilla. Add powdered sugar and mix well with a hand mixer. If your frosting needs to be thicker, add more powdered sugar."
+		],
+		"id": 16
+	},
+	{
+		"title": "Cream Cheese Roll-ups",
+		"category": "Appetizers",
+		"ingredients": [
+			"1 loaf white bread",
+			"8 oz cream cheese",
+			"1 egg",
+			"½ cup powdered sugar",
+			"1 cup sugar",
+			"1 ½ tsp cinnamon",
+			"¾ cup butter, melted"
+		],
+		"directions": [
+			"Flatten bread with a rolling pin. In a mixing bowl, combine cream cheese, egg, and powdered sugar. In another bowl, combine sugar and cinnamon and set aside. Spread about 1 T of cheese mixture on each slice of bread then roll it up. Dip in melted butter, then in cinnamon-sugar. Place on ungreased baking sheet. Bake at 350 for 20 minutes."
+		],
+		"id": 17
+	},
+	{
+		"title": "Dirt Pudding",
+		"category": "Desserts",
+		"ingredients": [
+			"8 oz cream cheese",
+			"½ Cup powdered sugar",
+			"3 ½ Cups milk",
+			"2 packages vanilla pudding",
+			"10 oz whipped topping",
+			"20 oz Oreo cookies, crushed",
+			"Optional gummy worms"
+		],
+		"directions": [
+			"Mix together softened cream cheese and powdered sugar. In another bowl, mix milk and pudding then fold in whipped topping. Combine mixtures. Place ⅓ of the crushed cookies in the bottom of a pan. Add ½ of the pudding mixture. Top with ⅓ of cookies, then add the rest of the pudding. Top with the rest of the cookies. Refrigerate overnight. Add gummy worms if desired."
+		],
+		"id": 18
+	},
+	{
+		"title": "Drew's Brownies",
+		"category": "Desserts",
+		"ingredients": [
+			"1 ½ cups flour",
+			"2 cups sugar",
+			"½ cup cocoa",
+			"½ tsp salt",
+			"1 cup oil",
+			"4 eggs",
+			"2 tsp vanilla",
+			"½ cup chopped nuts (optional)",
+			"Chocolate chips (optional)"
+		],
+		"directions": [
+			"Mix together dry ingredients then add oil, eggs and vanilla. Add nuts last. Pour into a greased 9x13 pan. Bake at 350 for 30 minutes. Let set in the pan for 5-10 minutes before cutting."
+		],
+		"id": 19
+	},
+	{
+		"title": "Egg and Sausage Casserole",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 lb sausage",
+			"6 eggs",
+			"2 slices cubed bread",
+			"½ tsp salt",
+			"1 ½ cups milk",
+			"½ tsp mustard",
+			"1 cup shredded cheddar cheese"
+		],
+		"directions": [
+			"Brown sausage and drain. Put the sausage in a 8x8 baking dish. Beat 6 eggs in a bowl. Add remaining ingredients and mix. Pour over sausage, cover, and let stand in the refrigerator overnight. Bake at 350 for 45-50 minutes. (If using a glass dish, let it come to room temperature before placing in hot oven)"
+		],
+		"id": 20
+	},
+	{
+		"title": "Fondue Italiano",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1/2 lb ground beef",
+			"½ envelope spaghetti ",
+			"sauce mix",
+			"15 oz can tomato sauce",
+			"12 oz cheddar cheese",
+			"4 oz mozzarella cheese",
+			"1 T corn starch",
+			"½ cup water"
+		],
+		"directions": [
+			"Brown meat and drain. Stir in sauce mix and tomato sauce. Add cheese gradually. Stir over low heat until melted. Blend cornstarch and water together then add to meat and cheese mixture. Cook and stir till thickened and bubbly. Put in fondue pot over burner. Eat with French bread cut in cubes."
+		],
+		"id": 21
+	},
+	{
+		"title": "Fudgy Brownies",
+		"category": "Desserts",
+		"ingredients": [
+			"¾ Cup coca",
+			"½ tsp baking soda",
+			"⅔ Cup oil(split)",
+			"½ Cup boiling water",
+			"2 eggs",
+			"2 Cups sugar",
+			"1 tsp vanilla",
+			"1 ½ Cup flour",
+			"¼ tsp salt"
+		],
+		"directions": [
+			"Stir coca and soda together. Blend in ⅓ cup oil. Add boiling water and stir until thickened. Stir in eggs, sugar, and other ⅓ cup oil. Mix till smooth. Add vanilla, flour and salt and mix completely. Pour into a greased 9x13 pan. Bake at 350 for 35-40 minutes."
+		],
+		"id": 22
+	},
+	{
+		"title": "Grandma's Overnight Rolls",
+		"category": "Breads",
+		"ingredients": [
+			"2 cups water",
+			"½ cup lard (or crisco)",
+			"½ cup sugar",
+			"1 pkg yeast",
+			"½ cup warm water",
+			"1 tbs salt",
+			"2 eggs",
+			"5-6 cups flour"
+		],
+		"directions": [
+			"Bring 2 cups of water and the lard to a boil. Boil for 10 minutes. Remove from heat and add sugar. Let cool to room temp. Dissolve yeast in ½ cup warm water. Add eggs yeast and salt to the sugar/lard mixture. Then add flour to make a good dough. Put it in a greased bowl, cover with saran wrap and let rise overnight. Shape into rolls and place in an oiled pan. Turn rolls over to coat with oil. Let rise. Bake at 400 for 25-30 minutes. (This is Grandpa's mom's recipe- your great-grandma)"
+		],
+		"id": 23
+	},
+	{
+		"title": "Great-Grandma's Sugar Cookies",
+		"category": "Desserts",
+		"ingredients": [
+			"3 cups flour",
+			"1 tsp baking soda",
+			"2 tsp cream of tartar",
+			"½ tsp salt",
+			"1 cup shortening",
+			"2 eggs",
+			"1 cup sugar",
+			"1 tsp vanilla"
+		],
+		"directions": [
+			"Mix together flour, soda, tartar, and salt. Cut in shortening. Beat eggs, sugar, and vanilla together, then add to the flour mixture. Make balls and press flat on a cookie sheet. If dough is too soft, cover it and put in the refrigerator for a while. Cut into shapes with cookie cutters if desired. Paint the cookies before baking. Bake at 375 for 8-9 minutes. Do not let brown. While still warm, brush with powdered sugar glaze. (This is Grandpa's mom's recipe)"
+		],
+		"id": 24
+	},
+	{
+		"title": "Hamburger Stroganoff",
+		"category": "Main Dishes",
+		"ingredients": [
+			"¼ an onion",
+			"¼ cup butter",
+			"1 lb hamburger",
+			"2 tsp salt",
+			"¼ tsp pepper",
+			"2 T flour",
+			"1 can cream soup",
+			"1 beef bouillon dissolved",
+			"noodles"
+		],
+		"directions": [
+			"Chop onion and sauté in butter. Brown hamburger and drain. Stir in onions, salt, pepper, flour, soup, and bouillon broth. Simmer uncovered for 10 minutes. Stir in sour cream. Serve over noodles."
+		],
+		"id": 25
+	},
+	{
+		"title": "Hillbilly Pie",
+		"category": "Desserts",
+		"ingredients": [
+			"1 stick of butter",
+			"1 Cup flour",
+			"1 tsp baking powder",
+			"1 Cup milk",
+			"1 Cup sugar",
+			"Can of fruit"
+		],
+		"directions": [
+			"Preheat oven to 350. Put butter in a 8x8 pan and melt in the oven. In a mixing bowl, combine flour, baking powder, milk and sugar. Pour in the pan over melted butter. Drain fruit and pour on top of the filling. Bake at 350 for 30-54 minutes."
+		],
+		"id": 26
+	},
+	{
+		"title": "Lasagna",
+		"category": "Main Dishes",
+		"ingredients": [
+			"Box of lasagna noodles",
+			"1 lb hamburger",
+			"2 cans tomato sauce",
+			"½ tsp basil",
+			"1 tsp garlic",
+			"½ tsp oregano",
+			"¼ tsp nutmeg",
+			"1 T sugar",
+			"3 cups cottage or ricotta cheese",
+			"½ cup parmesan cheese",
+			"2 eggs",
+			"2 tsp salt",
+			"½ tsp pepper",
+			"1 lb mozzarella cheese"
+		],
+		"directions": [
+			"Brown and drain hamburger. Add tomato sauce, spices, and sugar. Simmer for 30 minutes. Boil lasagna noodles according to directions on package. Mix cheeses, eggs, salt, and pepper. Layer in a 9x13 pan starting with noodles and ending with sauce. Bake at 375 for 40 minutes"
+		],
+		"id": 27
+	},
+	{
+		"title": "Magic Cookie Bars",
+		"category": "Desserts",
+		"ingredients": [
+			"½ cup butter",
+			"1 ½ graham",
+			"cracker crumbs",
+			"14 oz sweetened",
+			"condensed milk",
+			"6 oz chocolate chips",
+			"1 ½ cups coconut",
+			"1 cup chopped nuts"
+		],
+		"directions": [
+			"Preheat oven to 350 (325 for glass pan) In 13x9 pan, melt butter in oven. Sprinkle cracker crumbs over butter. Pour condensed milk evenly over crumbs. Top evenly with remaining ingredients. Press down firmly. Bake 25-30 minutes or until lightly brown. Cool thoroughly before cutting. Store covered at room temperature."
+		],
+		"id": 28
+	},
+	{
+		"title": "Mayonnaise Bread Sticks",
+		"category": "Breads",
+		"ingredients": [
+			"2 cups flour",
+			"½ tsp salt",
+			"1 tsp baking powder",
+			"¼ cup mayonnaise",
+			"Milk",
+			"½ stick of butter",
+			"Poppy seads(optional)"
+		],
+		"directions": [
+			"Mix together flour and salt. Cut in mayonnaise. Add enough milk to form a ball. Knead on a lightly floured surface 10-15 times. Divide dough into 8 pieces. Roll or cut into long sticks. Melt butter in bottom of the pan you will bake the bread in. Place bread sticks in the pan and turn to coat with butter. Sprinkle with poppy seeds if desired. Bake at 400 for 12-15 minutes."
+		],
+		"id": 29
+	},
+	{
+		"title": "Meat Loaf",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 ½ lbs ground beef",
+			"1 beaten egg",
+			"¼ cup chopped onions",
+			"1 Cup raw oats",
+			"2 tsp salt",
+			"¼ tsp pepper",
+			"1 T Worcestershire ",
+			"1 Cup water or milk",
+			"Topping:",
+			"3 T brown sugar",
+			"¼ cup ketchup",
+			"1 tsp mustard",
+			"¼ tsp nutmeg(optional)"
+		],
+		"directions": [
+			"Mix all ingredients together(except topping). Pack into a loaf pan. Mix topping together and spread on top of the meat loaf. Bake at 350 for 1 hour."
+		],
+		"id": 30
+	},
+	{
+		"title": "Mississippi Mud",
+		"category": "Desserts",
+		"ingredients": [
+			"1 cup Flour",
+			"2 T Cocoa",
+			"¼ T Salt",
+			"¾ cup Sugar",
+			"2 tsp baking powder",
+			"½ cup Milk",
+			"2 T melted butter",
+			"1 tsp vanilla",
+			"Topping:",
+			"1 cup brown sugar",
+			"¼ cup cocoa"
+		],
+		"directions": [
+			"Sift dry ingredients together. Blend liquids together and mix with dry. Put into greased 9x9 pan. Mix together topping and spread on top. Then pour 1 cup of hot water over all of it. Bake at 350 for 45 minutes."
+		],
+		"id": 31
+	},
+	{
+		"title": "Monster Cookies",
+		"category": "Desserts",
+		"ingredients": [
+			"5 cups brown sugar",
+			"4 cups sugar",
+			"3 lbs peanut butter",
+			"1 lb butter",
+			"12 eggs",
+			"1 T vanilla",
+			"18 cups oats",
+			"8 tsp baking soda",
+			"1 lbs M&Ms",
+			"12 oz chocolate chips"
+		],
+		"directions": [
+			"Cream sugars, peanut butter, and butter together. Add eggs, vanilla, oats, and baking soda. Stir in M&Ms and chocolate chips. Mix well. Drop from spoon onto ungreased cookie sheet. Bake at 350 for 10-12 minutes until golden brown."
+		],
+		"id": 32
+	},
+	{
+		"title": "Monster Cookies (Smaller recipe)",
+		"category": "Desserts",
+		"ingredients": [
+			"1 1/4 cups brown sugar",
+			"1 cups sugar",
+			"1 ⅓ cups peanut butter",
+			"½ cup butter",
+			"3 eggs",
+			"1 tsp vanilla",
+			"4 ½ cups oats",
+			"2 tsp baking soda",
+			"¼ lb M&Ms",
+			"3 oz chocolate chips"
+		],
+		"directions": [
+			"Cream sugars, peanut butter, and butter together. Add eggs, vanilla, oats, and baking soda. Stir in M&Ms and chocolate chips. Mix well. Drop from spoon onto ungreased cookie sheet. Bake at 350 for 10-12 minutes until golden brown."
+		],
+		"id": 33
+	},
+	{
+		"title": "Pancakes",
+		"category": "Breads",
+		"ingredients": [
+			"1 egg",
+			"2 T oil",
+			"1 T sugar",
+			"½ tsp salt",
+			"1 cup flour",
+			"1 tsp baking powder",
+			"1 cup milk"
+		],
+		"directions": [
+			"Mix together eggs and oil. In a separate bowl, mix sugar, salt, flour and baking powder. Add to egg mixture. Add milk and whisk until smooth. Cook on a hot griddle greased with butter."
+		],
+		"id": 34
+	},
+	{
+		"title": "Peach Blossom Sauce",
+		"category": "Sauces",
+		"ingredients": [
+			"1 tsp cornstarch",
+			"⅓ Cup brown sugar",
+			"1 jar of baby prunes",
+			"8 oz peach preserves",
+			"1 tsp sesame oil",
+			"¼ Cup vinegar",
+			"1 tsp Worcestershire",
+			"1 T ketchup",
+			"¼ tsp dry ginger",
+			"½ tsp salt"
+		],
+		"directions": [
+			"Mix brown sugar and cornstarch first then add all ingredients in a sauce pan and cook for several minutes until thickened. Can be refrigerated for several weeks."
+		],
+		"id": 35
+	},
+	{
+		"title": "Peanut Butter Brownies",
+		"category": "Desserts",
+		"ingredients": [
+			"1 stick of butter",
+			"½ cup of peanut butter",
+			"1 ½ cups sugar",
+			"1 cup self rising flour",
+			"2 eggs",
+			"1 tsp vanilla"
+		],
+		"directions": [
+			"Melt butter and peanut butter. Mix together with sugar. Add eggs, flour and vanilla. Pour into a 9x 13 pan. Bake at 350 for 25 minutes."
+		],
+		"id": 36
+	},
+	{
+		"title": "Peanut Butter Cake",
+		"category": "Desserts",
+		"ingredients": [
+			"1 stick butter",
+			"½ oil",
+			"1 cup Coke",
+			"⅓ cup peanut butter",
+			"1 ½ cup mini marshmallows",
+			"2 cups flour",
+			"2 cups sugar",
+			"1 tsp baking soda",
+			"2 eggs",
+			"½ cup buttermilk",
+			"1 tsp vanilla"
+		],
+		"directions": [
+			"In saucepan, mix butter, coke, oil and peanut butter. Bring to boil, but do not cook. Remove from heat and add marshmallows. Stir until dissolved, then let cool. Mix together flour, sugar, soda, eggs, buttermilk, and vanilla, then add peanut butter mixture and mix again. Pour into a greased and floured 9x13 pan. Bake at 325 for 45 minutes. Put icing on cake immediately when it comes out of the oven and is still hot."
+		],
+		"id": 37
+	},
+	{
+		"title": "Peanut Butter Cake Icing",
+		"category": "Sauces",
+		"ingredients": [
+			"⅓ cup peanut butter",
+			"1 stick of butter",
+			"1 tsp vanilla",
+			"¼ cup Coke",
+			"16 oz powdered sugar"
+		],
+		"directions": [
+			"In saucepan, mix peanut butter, butter vanilla and coke. Bring to a boil but do not cook. Remove from heat and add powdered sugar. Beat well and pour on hot cake."
+		],
+		"id": 38
+	},
+	{
+		"title": "Peanut Butter Chocolate Fondue",
+		"category": "Desserts",
+		"ingredients": [
+			"1 cup semisweet",
+			"chocolate chips",
+			"½ cup sugar",
+			"½ cup milk",
+			"½ cup creamy peanut butter"
+		],
+		"directions": [
+			"In a saucepan, cook and stir the chocolate chips, sugar, milk and peanut butter over low heat until smooth. Transfer to a fondue pot and keep warm. Serve with bananas, strawberries, marshmallows, and angle food cake."
+		],
+		"id": 39
+	},
+	{
+		"title": "Pizza Dough",
+		"category": "Breads",
+		"ingredients": [
+			"1 cup warm water",
+			"1 pkg yeast",
+			"1 T sugar",
+			"2 T oil",
+			"1 tsp salt",
+			"2 ½ cups flour"
+		],
+		"directions": [
+			"Dissolve yeast in water. Add remaining ingredients. Mix well and let stand for 5 minutes. With greased hands, spread onto a greased pizza pan."
+		],
+		"id": 40
+	},
+	{
+		"title": "Poppy Seed Muffins",
+		"category": "Breads",
+		"ingredients": [
+			"3 cups flour",
+			"2 ¼ cups sugar",
+			"1 ½ tsp salt",
+			"1 ½ tsp baking powder",
+			"1 ½ cups vegetable oil",
+			"1 ½ cups milk",
+			"3 eggs",
+			"½ tsp almond extract",
+			"1 ½ T poppy seeds"
+		],
+		"directions": [
+			"Grease two twelve cup muffin pans. Combine dry ingredients and mix well. Add oil, milk, eggs, almond extract and whisk until batter is smooth. Add poppy seeds and stir. Fill muffin cups two-thirds full. Bake at 350 until golden brown, about 30 minutes. (I usually omit the poppy seeds)"
+		],
+		"id": 41
+	},
+	{
+		"title": "Powdered Sugar Glaze",
+		"category": "Sauces",
+		"ingredients": [
+			"¾ cup powdered sugar",
+			"3-4 T milk",
+			"½ tsp vanilla or almond extract "
+		],
+		"directions": [
+			"Mix with a small whisk or fork. If it is too thin, add more powdered sugar. Use a pastry brush to glaze cookies."
+		],
+		"id": 42
+	},
+	{
+		"title": "Pumpkin Squares",
+		"category": "Desserts",
+		"ingredients": [
+			"1 Cup flour",
+			"½ Cup quick oats",
+			"½ Cup brown sugar",
+			"½ Cup butter",
+			"Filling:",
+			"2 cups pumpkin ",
+			"1 can evaporated milk",
+			"2 eggs",
+			"¾ Cups sugar",
+			"1 tsp cinnamon",
+			"½ tsp ginger",
+			"½ tsp cloves",
+			"½ tsp salt",
+			"Topping:",
+			"½ Cup pecan",
+			"2 T butter",
+			"½ Cup brown sugar"
+		],
+		"directions": [
+			"Combine flour, oats, brown sugar and butter until crumbly. Press into a greased 9x13 pan. Bake at 350 for 20 minutes. In a mixing bowl, beat ingredients for filling. Pour onto crust and bake at 350 for 20 minutes. ",
+			"Topping: Combine nuts, butter and brown sugar. Sprinkle over pumpkin filling. Return to oven and bake 15-20 minutes until filling is set. Cool and cut into squares."
+		],
+		"id": 43
+	},
+	{
+		"title": "Salisbury Steak",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 lb ground beef",
+			"1 egg",
+			"1 T onion ",
+			"1 T Worcestershire",
+			"2 T ketchup",
+			"2 T water",
+			"1 can cream of mushroom soup"
+		],
+		"directions": [
+			"Finely chop the onion. Mix beef, egg, onion, Worcestershire sauce, and ketchup together. Shape into 6 patties. Coat in flour and brown in hot fat. Place in a pan and top with soup and water. Bake at 350 for 45 minutes."
+		],
+		"id": 44
+	},
+	{
+		"title": "Sausage Cornbread",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 lb sausage",
+			"1 Cup flour",
+			"½ Cup sugar",
+			"1 Cup cornmeal",
+			"1 tsp salt",
+			"2 eggs",
+			"½ Cup oil",
+			"1 Cup milk",
+			"Gravy:",
+			"3 T drippings from sausage",
+			"3 T onions",
+			"4 T flour",
+			"½ tsp Worcestershire sauce",
+			"2 Cups milk"
+		],
+		"directions": [
+			"Brown sausage and drain. Mix dry ingredients. Add eggs, oil, and milk, and mix well. Put sausage in the bottom of an 8x8 pan then pour cornbread mixture over it. Bake at 425 for 20-25 minutes. To make gravy- Brown onion in sausage drippings. Add flour and brown. Add milk slowly, whisking after each addition."
+		],
+		"id": 45
+	},
+	{
+		"title": "Snickerdoodle Cookies",
+		"category": "Desserts",
+		"ingredients": [
+			"½ cup shortening",
+			"½ cup butter",
+			"1 ½ cup sugar",
+			"2 eggs",
+			"1 tsp vanilla",
+			"2 ⅔ cup flour",
+			"2 tsp cream of tartar",
+			"1 tsp soda",
+			"¼ tsp salt",
+			"2 T sugar",
+			"1tsp cinnamon"
+		],
+		"directions": [
+			"Beat butter, shortening and sugar till fluffy. Beat in eggs and vanilla. Mix flour, tartar, soda and salt then add to mixture. Mix sugar and cinnamon in a small bowl. Form dough into balls and roll in cinnamon/sugar mixture. Bake at 400 degrees for 9 minutes."
+		],
+		"id": 46
+	},
+	{
+		"title": "Sopapilla",
+		"category": "Desserts",
+		"ingredients": [
+			"3(8oz) packages cream",
+			"cheese, softened",
+			"1 ½ cups sugar",
+			"1 ½ tsp vanilla",
+			"2 cans crescent roll dough",
+			"½ cup melted butter",
+			"½ cup sugar",
+			"1 tsp cinnamon"
+		],
+		"directions": [
+			"Beat the cream cheese with sugar and vanilla in a bowl until smooth. Unroll the cans of crescent roll dough and shape each piece into 9x13 rectangles. Press one piece into the bottom of a 9x13 baking dish. Evenly spread the cream cheese mixture into the baking dish then cover with remaining piece of crescent dough. Drizzle the melted butter evenly over the top. Stir ½ cup of sugar together with the cinnamon in a small bowl then sprinkle it over the cheesecake. Bake at 350 until the dough has puffed and turned golden brown, about 45 minutes. Cool completely in the pan before cutting."
+		],
+		"id": 47
+	},
+	{
+		"title": "Strawberry Pie",
+		"category": "Desserts",
+		"ingredients": [
+			"1 baked pie shell",
+			"1 Cup sugar",
+			"1 ½ Cup water",
+			"1 package strawberry jello",
+			"3 T cornstarch",
+			"1 qt strawberries"
+		],
+		"directions": [
+			"Cut up strawberries and put in baked pie shell. Cook water, cornstarch, and sugar till clear. Remove from heat and add jello. Pour filling over strawberries. Refrigerate until firm. Top with whipped cream to serve."
+		],
+		"id": 48
+	},
+	{
+		"title": "Stuffed Shells",
+		"category": "Main Dishes",
+		"ingredients": [
+			"Large pasta shells",
+			"1 lb hamburger",
+			"15 oz spaghetti sauce",
+			"16 oz cottage cheese",
+			"2 T Italian seasoning",
+			"1 tsp salt",
+			"½ cup mozzarella cheese",
+			"¼ cup parmesan cheese"
+		],
+		"directions": [
+			"Brown and drain hamburger. Add ½ of spaghetti sauce and let cool. Boil shells. (add T oil to prevent sticking). Mix seasonings and cheeses together then add to the meat mixture. Lay shells in 9x13 pan and stuff with mixture. Spoon remaining spaghetti sauce over shells. Bake at 350 about 25 minutes until hot and bubbly."
+		],
+		"id": 49
+	},
+	{
+		"title": "Sweet Potato Casserole",
+		"category": "Sides",
+		"ingredients": [
+			"3 cups cooked, mashed",
+			"sweet potatoes",
+			"½ cup sugar",
+			"½ can evaporated milk",
+			"⅓ cup melted butter",
+			"½ tsp salt",
+			"2 eggs",
+			"Topping:",
+			"1 cup brown sugar",
+			"¼ cup butter, softened",
+			"⅓ cup flour",
+			"1 cup chopped pecans"
+		],
+		"directions": [
+			"Mix sweet potatoes, sugar, milk, butter, salt and eggs together in a bowl with a mixer. Spread into a 9x13 pan. Mix topping ingredients together until crumbly. Sprinkle over potato mix. Bake at 350 for 25 min."
+		],
+		"id": 50
+	},
+	{
+		"title": "Taco Bake",
+		"category": "Main Dishes",
+		"ingredients": [
+			"1 lb ground beef",
+			"½ cup chopped onion",
+			"1 package taco seasoning",
+			"1 can tomato sauce",
+			"1 can whole kernel corn",
+			"2 cups shredded cheddar cheese",
+			"2 cups Bisquick baking mix",
+			"1 cup milk",
+			"2 eggs"
+		],
+		"directions": [
+			"Brown hamburger with onions and drain. Spoon into 9x13 baking dish. Stir in taco seasoning mix, tomato sauce and corn. Sprinkle with cheese. In bowl, mix Bisquick, milk, and eggs. Pour over beef mixture. Bake at 350 for 35 minutes or until light golden brown. Serve with sour cream, chopped tomato and shredded lettuce if desired."
+		],
+		"id": 51
+	}
+]

@@ -1,0 +1,34 @@
+---
+layout: base.njk
+pagination:
+  data: recipes
+  size: 1
+  alias: recipe
+permalink: "/recipes/{{ recipe.title | snake_case }}/"
+title: "{{ recipe.title }}"
+contentClass: recipe-single
+---
+
+<article class="recipe-card recipe-card-single">
+	<a href="/recipes/" class="recipe-close-link" title="Back to recipes">
+		<img src="/images/close.svg" alt="Close">
+	</a>
+
+	<div class="recipe-card-header">
+		<img src="/images/recipe.png" alt="" class="recipe-card-image">
+		<div>
+			<h3 class="recipe-card-title">{{ recipe.title }}</h3>
+			<ul class="recipe-ingredients">
+				{%- for ingredient in recipe.ingredients %}
+				<li>{{ ingredient }}</li>
+				{%- endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<div class="recipe-directions">
+		{%- for step in recipe.directions %}
+		<p>{{ step }}</p>
+		{%- endfor %}
+	</div>
+</article>
