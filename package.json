@@ -15,7 +15,7 @@
   "type": "module",
   "devDependencies": {
     "eslint": "^9.39.2",
-    "eslint-config-reverentgeek": "^6.3.6"
+    "eslint-config-reverentgeek": "^6.3.7"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2"
