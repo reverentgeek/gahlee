@@ -93,9 +93,9 @@ export default function () {
 	// Add "Gahlee v1" album from the legacy photos in images/albums/v1/
 	const v1Photos = files( "images/albums/v1/*.{jpg,jpeg,png,gif,webp}" )
 		.map( ( file, index ) => {
-			// Only names like 20011222_08.JPG carry a date; files() falls back to the
-			// modification time for the rest, which isn't when the photo was taken
-			const dated = /^\d{8}_/.test( file.name );
+			// Only names like 20011222_08.JPG carry a date; for the rest, files() falls
+			// back to the modification time, which isn't when the photo was taken
+			const dated = file.dateFrom === "name";
 			const dateFormatted = dated
 				? file.date.toLocaleDateString( "en-US", {
 					year: "numeric",

@@ -1,4 +1,4 @@
-import { defineConfig } from "ssqch";
+import { defineConfig, slugify } from "ssqch";
 
 export default defineConfig( {
 	dirs: { input: "src", output: "_site", includes: "_includes", layouts: "_layouts", data: "_data" },
@@ -9,10 +9,8 @@ export default defineConfig( {
 	passthrough: [ "src/css", "src/images", { images: "images" } ],
 
 	filters: {
-		// URL slugs for recipes: "Pine Cone Crunch!" -> "pine_cone_crunch"
-		snake_case: str => str
-			.toLowerCase()
-			.replace( /[^a-z0-9]+/g, "_" )
-			.replace( /^_+|_+$/g, "" )
+		// URL slugs for recipes: "Drew's Brownies" -> "drew_s_brownies". The live URLs
+		// split words at apostrophes, which slugify drops by default.
+		snake_case: str => slugify( str, { separator: "_", apostrophes: "separate" } )
 	}
 } );

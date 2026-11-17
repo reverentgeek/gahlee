@@ -1,7 +1,7 @@
 minimumReleaseAgeExclude:
   - eslint-config-reverentgeek
-  - '@ssqch/darwin-arm64@0.6.3'
-  - '@ssqch/darwin-x64@0.6.3'
-  - '@ssqch/linux-x64@0.6.3'
-  - '@ssqch/win32-x64@0.6.3'
-  - ssqch@0.6.3
+  - ssqch
+  - '@ssqch/darwin-arm64'
+  - '@ssqch/darwin-x64'
+  - '@ssqch/linux-x64'
+  - '@ssqch/win32-x64'
