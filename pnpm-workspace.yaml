@@ -1,3 +1,7 @@
 minimumReleaseAgeExclude:
   - eslint-config-reverentgeek
-  - eleventy-plugin-edgejs
+  - '@ssqch/darwin-arm64@0.6.3'
+  - '@ssqch/darwin-x64@0.6.3'
+  - '@ssqch/linux-x64@0.6.3'
+  - '@ssqch/win32-x64@0.6.3'
+  - ssqch@0.6.3

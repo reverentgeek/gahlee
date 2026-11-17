@@ -1,13 +1,9 @@
-import fs from "fs";
-import path from "path";
+import { files, readData, slugger, slugify } from "ssqch";
 
 export default function () {
-	const dataDir = path.join( process.cwd(), "src", "_data" );
-
-	// Read the JSON files (strip BOM if present)
-	const stripBom = str => str.replace( /^\uFEFF/, "" );
-	const albumsRaw = JSON.parse( stripBom( fs.readFileSync( path.join( dataDir, "tblPhotoAlbum.json" ), "utf-8" ) ) );
-	const photosRaw = JSON.parse( stripBom( fs.readFileSync( path.join( dataDir, "tblPhoto.json" ), "utf-8" ) ) );
+	// The historical table exports (readData skips their UTF-8 byte-order mark)
+	const albumsRaw = readData( "src/_data/tblPhotoAlbum.json" );
+	const photosRaw = readData( "src/_data/tblPhoto.json" );
 
 	// Create a map of photos by album ID
 	const photosByAlbum = {};
@@ -70,24 +66,11 @@ export default function () {
 				} );
 			}
 
-			// Generate a URL-friendly slug from the album name or ID
-			let baseSlug = album.PhotoAlbumName
-				? album.PhotoAlbumName
-					.toLowerCase()
-					.replace( /['']/g, "" )
-					.replace( /[^a-z0-9]+/g, "-" )
-					.replace( /^-|-$/g, "" )
-				: "";
-
-			// If slug is empty, use the ID
-			if ( !baseSlug ) {
-				baseSlug = album.PhotoAlbumID;
-			}
-
 			return {
 				id: album.PhotoAlbumID,
 				name: album.PhotoAlbumName || "Untitled Album",
-				baseSlug,
+				// Slug from the name, or the ID when the name has nothing to slug
+				slugSource: album.PhotoAlbumName && slugify( album.PhotoAlbumName ) ? album.PhotoAlbumName : album.PhotoAlbumID,
 				date: album.PhotoAlbumDate,
 				dateFormatted,
 				year,
@@ -103,51 +86,32 @@ export default function () {
 		// Sort by SortNum (lower = more recent based on the data pattern)
 		.sort( ( a, b ) => a.sortNum - b.sortNum );
 
-	// Ensure unique slugs by appending index for duplicates
-	const slugCounts = {};
-	const albums = albumsProcessed.map( ( album ) => {
-		let slug = album.baseSlug;
-		if ( slugCounts[slug] !== undefined ) {
-			slugCounts[slug]++;
-			slug = `${ slug }-${ slugCounts[slug] }`;
-		} else {
-			slugCounts[slug] = 0;
-		}
-		return { ...album, slug };
-	} );
+	// Unique slugs, in sort order: the second "Misc Pictures" is misc-pictures-1
+	const slug = slugger();
+	const albums = albumsProcessed.map( ( { slugSource, ...album } ) => ( { ...album, slug: slug( slugSource ) } ) );
 
-	// Add "Gahlee v1" album from the v1 subfolder
-	const v1Dir = path.join( process.cwd(), "images", "albums", "v1" );
-	if ( fs.existsSync( v1Dir ) ) {
-		const v1Files = fs.readdirSync( v1Dir )
-			.filter( file => /\.(jpg|jpeg|png|gif|webp)$/i.test( file ) )
-			.sort();
-
-		const v1Photos = v1Files.map( ( filename, index ) => {
-			// Parse date from filename (format: YYYYMMDD_##.ext)
-			const match = filename.match( /^(\d{4})(\d{2})(\d{2})_/ );
-			let date = null;
-			let dateFormatted = null;
-
-			if ( match ) {
-				const [ , year, month, day ] = match;
-				date = `${ year }-${ month }-${ day }`;
-				const dateObj = new Date( Date.UTC( parseInt( year ), parseInt( month ) - 1, parseInt( day ) ) );
-				dateFormatted = dateObj.toLocaleDateString( "en-US", {
+	// Add "Gahlee v1" album from the legacy photos in images/albums/v1/
+	const v1Photos = files( "images/albums/v1/*.{jpg,jpeg,png,gif,webp}" )
+		.map( ( file, index ) => {
+			// Only names like 20011222_08.JPG carry a date; files() falls back to the
+			// modification time for the rest, which isn't when the photo was taken
+			const dated = /^\d{8}_/.test( file.name );
+			const dateFormatted = dated
+				? file.date.toLocaleDateString( "en-US", {
 					year: "numeric",
 					month: "long",
 					day: "numeric",
 					timeZone: "UTC"
-				} );
-			}
+				} )
+				: null;
 
 			return {
 				id: `v1-${ index }`,
-				filename,
-				src: `/images/albums/v1/${ filename }`,
+				filename: file.name,
+				src: file.url,
 				title: "",
 				description: dateFormatted ? `Photo from ${ dateFormatted }` : "",
-				date,
+				date: dated ? file.date.toISOString().slice( 0, 10 ) : null,
 				dateFormatted,
 				sortNum: index,
 				width: null,
@@ -155,21 +119,20 @@ export default function () {
 			};
 		} );
 
-		if ( v1Photos.length > 0 ) {
-			albums.push( {
-				id: "gahlee-v1",
-				name: "Gahlee v1",
-				slug: "gahlee-v1",
-				date: "2001-12-22T00:00:00.000Z",
-				dateFormatted: "December 22, 2001",
-				year: 2001,
-				description: "Photos from the original Gahlee website (2001-2004).",
-				sortNum: 1000,
-				photos: v1Photos,
-				photoCount: v1Photos.length,
-				coverPhoto: v1Photos[0] || null
-			} );
-		}
+	if ( v1Photos.length > 0 ) {
+		albums.push( {
+			id: "gahlee-v1",
+			name: "Gahlee v1",
+			slug: "gahlee-v1",
+			date: "2001-12-22T00:00:00.000Z",
+			dateFormatted: "December 22, 2001",
+			year: 2001,
+			description: "Photos from the original Gahlee website (2001-2004).",
+			sortNum: 1000,
+			photos: v1Photos,
+			photoCount: v1Photos.length,
+			coverPhoto: v1Photos[0] || null
+		} );
 	}
 
 	return albums;

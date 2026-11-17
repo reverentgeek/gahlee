@@ -2,12 +2,10 @@
 	"name": "gahlee",
 	"version": "1.0.4",
 	"description": "",
-	"main": "index.js",
 	"scripts": {
-		"build": "eleventy",
-		"start": "npm run clean && eleventy --serve",
-		"clean": "rm -rf _site",
-		"lint": "eslint src/**/*.js"
+		"build": "ssqch build",
+		"dev": "ssqch serve",
+		"lint": "eslint --fix"
 	},
 	"keywords": [],
 	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com/)",
@@ -15,10 +13,8 @@
 	"type": "module",
 	"devDependencies": {
 		"eslint": "^10.15.0",
-		"eslint-config-reverentgeek": "^7.2.2"
-	},
-	"dependencies": {
-		"@11ty/eleventy": "^3.1.8"
+		"eslint-config-reverentgeek": "^7.2.2",
+		"ssqch": "0.6.3"
 	},
 	"packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0"
 }
