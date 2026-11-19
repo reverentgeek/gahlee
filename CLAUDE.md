@@ -13,7 +13,8 @@ Gahlee House is a personal photo album and recipe website built with the [SiteSq
 ## Gotchas
 
 - **The site generator is ssqch**, configured in `ssqch.config.js`. `pnpm build` runs `ssqch build`; `pnpm dev` runs `ssqch serve` (http://localhost:8080). `pnpm ssqch docs <topic>` prints its docs.
-- **Templates are Nunjucks (`.njk`), rendered by ssqch's minijinja engine**, not the JavaScript Nunjucks library. Prefer Jinja-style filters (`{{ items | length }}`) over JavaScript methods.
+- **Templates are Nunjucks (`.njk`), rendered by ssqch's own fork of Nunjucks** (since ssqch 0.8; earlier versions used MiniJinja). Prefer filters (`{{ items | length }}`) over JavaScript methods. `.njk` prints values the Nunjucks way (`true`, lists as `a,b`), and `+` is JavaScript's, so use `xs | chain(ys)` to join lists. `{% break %}`, `{% with %}` and `{% for x in xs if ... %}` are errors.
+- **ssqch 0.8+ runs on Node 22.18 or newer.** The config and data files are loaded by Node, so a filter that sorts its input changes it for later pages: copy first (`[...posts].sort()`).
 - **`src/_data/albums.js` uses ssqch's data helpers** from `import { ... } from "ssqch"`: `readData()` for the table exports (it skips their UTF-8 byte-order mark), `files()` for the `images/albums/v1/` scan (a photo gets a date only when `dateFrom` is `"name"`, never the copy's modification time), and `slugger()` for unique album slugs. These need ssqch 0.6.4 or later.
 - `ssqch diff <old _site> <new _site>` compares two builds — handy for confirming a refactor changed nothing. The footer year comes from `page.date` (the file's modification time), so expect "only dates changed" lines after a fresh checkout.
 
