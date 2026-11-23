@@ -192,8 +192,8 @@ importers:
         specifier: ^7.2.2
         version: 7.2.2(eslint@10.15.0)
       ssqch:
-        specifier: 0.8.0
-        version: 0.8.0
+        specifier: ~0.14.0
+        version: 0.14.0
 
 packages:
 
@@ -760,8 +760,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  ssqch@0.8.0:
-    resolution: {integrity: sha512-WaqgtNivDLlZyXRI9RvItnx83GtnUceRu+chcRvdibySZSnxF9mTRpjVf3V25l1P3jMi/u4v0P2jpffL2noJuA==}
+  ssqch@0.14.0:
+    resolution: {integrity: sha512-rPOvIVEr/WWXccAU3IL+9B/Mf8bABdLNF22+l23AvW5c/ojYSalLEfGerLv1PZylX2VhE7uVIeGn0+bSYE5COA==}
     engines: {node: '>=22.18'}
     hasBin: true
 
@@ -1313,7 +1313,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  ssqch@0.8.0:
+  ssqch@0.14.0:
     dependencies:
       sharp: 0.35.5
     transitivePeerDependencies:
