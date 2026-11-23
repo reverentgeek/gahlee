@@ -5,8 +5,9 @@ export default defineConfig( {
 	templateFormats: [ "njk" ],
 
 	// src/images holds the site's own icons; the root images/ folder holds the
-	// historical photo archive. Both land in /images/.
-	passthrough: [ "src/css", "src/images", { images: "images" } ],
+	// historical photo archive. Both land in /images/. src/favicon.ico is copied
+	// to the site root, where browsers look for it by default.
+	passthrough: [ "src/css", "src/images", "src/favicon.ico", { images: "images" } ],
 
 	filters: {
 		// URL slugs for recipes: "Drew's Brownies" -> "drew_s_brownies". The live URLs
